@@ -1,5 +1,27 @@
 import HomeRef from "@/app/components/home/HomeRef";
 
+import workImg01 from "@/img/works/1400x1400_w01.webp";
+import workImg02 from "@/img/works/800_w02-thumb.webp";
+import workImg03 from "@/img/works/800_w03-thumb.webp";
+import workImg04 from "@/img/works/800_w04-thumb.webp";
+
+import avatart01 from "@/img/avatars/400x400_t01.webp";
+import avatart02 from "@/img/avatars/400x400_t02.webp";
+
+import services01 from "@/img/services/1200x900_s01.webp";
+import services02 from "@/img/services/1200x900_s02.webp";
+import services03 from "@/img/services/1200x900_s03.webp";
+import services04 from "@/img/services/1200x900_s04.webp";
+
+import iconPhotoshop from "@/img/icons/icon-photoshop.svg";
+import iconFigma from "@/img/icons/icon-figma.svg";
+import iconNotion from "@/img/icons/icon-notion.svg";
+import iconCss from "@/img/icons/icon-css.svg";
+import iconHtml from "@/img/icons/icon-html.svg";
+import iconBlender from "@/img/icons/icon-blender.svg";
+import iconScketch from "@/img/icons/icon-scketch.svg";
+import iconIllustrator from "@/img/icons/icon-illustrator.svg";
+
 export default function Home() {
   return (
     <div className="content__wrapper">
@@ -77,13 +99,13 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               >
                 <a
                   href="img/works/1400x1400_w01.webp"
-                  data-image="img/works/1400x1400_w01.webp"
+                  data-image={workImg01.src}
                   className="gallery__link"
                   itemProp="contentUrl"
                   data-size="1400x1400"
                 >
                   <img
-                    src="img/works/800_w01-thumb.webp"
+                    src={workImg01.src}
                     className="gallery__image"
                     itemProp="thumbnail"
                     alt="Image description"
@@ -91,7 +113,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   <div
                     className="picture"
                     style={{
-                      backgroundImage: 'url("img/works/1400x1400_w01.webp")',
+                      backgroundImage: `url(${workImg01.src})`,
                     }}
                   />
                 </a>
@@ -133,7 +155,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   data-size="1400x1400"
                 >
                   <img
-                    src="img/works/800_w02-thumb.webp"
+                    src={workImg02.src}
                     className="gallery__image"
                     itemProp="thumbnail"
                     alt="Image description"
@@ -141,7 +163,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   <div
                     className="picture"
                     style={{
-                      backgroundImage: 'url("img/works/800_w02-thumb.webp")',
+                      backgroundImage: `url(${workImg02.src})`,
                     }}
                   />
                 </a>
@@ -184,7 +206,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   data-size="1400x1400"
                 >
                   <img
-                    src="img/works/800_w03-thumb.webp"
+                    src={workImg03.src}
                     className="gallery__image"
                     itemProp="thumbnail"
                     alt="Image description"
@@ -192,7 +214,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   <div
                     className="picture"
                     style={{
-                      backgroundImage: 'url("img/works/800_w03-thumb.webp")',
+                      backgroundImage: `url(${workImg03.src})`,
                     }}
                   />
                 </a>
@@ -235,7 +257,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   data-size="1400x1400"
                 >
                   <img
-                    src="img/works/800_w04-thumb.webp"
+                    src={workImg04.src}
                     className="gallery__image"
                     itemProp="thumbnail"
                     alt="Image description"
@@ -243,7 +265,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                   <div
                     className="picture"
                     style={{
-                      backgroundImage: 'url("img/works/800_w04-thumb.webp")',
+                      backgroundImage: `url(${workImg04.src})`,
                     }}
                   />
                 </a>
@@ -318,10 +340,10 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
         {/* Content Block - H2 Section Title End */}
         {/* Content Block - Achievements Start */}
         <div className="content__block grid-block">
-          <div className="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+          <div className="achievements flex flex-col md:flex-row md:items-stretch">
             {/* achievements single item */}
             <div
-              className="achievements__item d-flex flex-column grid-item animate-card-3"
+              className="achievements__item flex flex-col grid-item animate-card-3"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -586,10 +608,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                       opacity: 1,
                     }}
                   >
-                    <img
-                      src="img/services/1200x900_s01.webp"
-                      alt="Service/Feature Image"
-                    />
+                    <img src={services01.src} alt="Service/Feature Image" />
                   </div>
                 </div>
               </div>
@@ -659,10 +678,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                       opacity: 1,
                     }}
                   >
-                    <img
-                      src="img/services/1200x900_s02.webp"
-                      alt="Service/Feature Image"
-                    />
+                    <img src={services02.src} alt="Service/Feature Image" />
                   </div>
                 </div>
               </div>
@@ -721,10 +737,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                     </p>
                   </div>
                   <div className="cards__image d-flex">
-                    <img
-                      src="img/services/1200x900_s03.webp"
-                      alt="Service/Feature Image"
-                    />
+                    <img src={services03.src} alt="Service/Feature Image" />
                   </div>
                 </div>
               </div>
@@ -796,10 +809,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                       opacity: 1,
                     }}
                   >
-                    <img
-                      src="img/services/1200x900_s04.webp"
-                      alt="Service/Feature Image"
-                    />
+                    <img src={services04.src} alt="Service/Feature Image" />
                   </div>
                 </div>
               </div>
@@ -1367,10 +1377,10 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
         {/* Content Block - Tools List Start */}
         <div className="content__block grid-block block-large">
           {/* Tools List Start */}
-          <div className="tools-cards d-flex justify-content-start flex-wrap">
+          <div className="tools-cards flex justify-start flex-wrap">
             {/* tools simgle item */}
             <div
-              className="tools-cards__item d-flex grid-item-s animate-card-5"
+              className="tools-cards__item flex grid-item-s animate-card-5"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -1382,7 +1392,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-photoshop.svg"
+                  src={iconPhotoshop.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1408,7 +1418,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
             </div>
             {/* tools simgle item */}
             <div
-              className="tools-cards__item d-flex grid-item-s animate-card-5"
+              className="tools-cards__item flex grid-item-s animate-card-5"
               style={{
                 translate: "none",
                 rotate: "none",
@@ -1420,7 +1430,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-figma.svg"
+                  src={iconFigma.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1458,7 +1468,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-illustrator.svg"
+                  src={iconIllustrator.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1468,6 +1478,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                     opacity: 1,
                   }}
                 />
+
                 <h6
                   className="tools-cards__caption animate-in-up"
                   style={{
@@ -1496,7 +1507,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-scketch.svg"
+                  src={iconScketch.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1534,7 +1545,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-blender.svg"
+                  src={iconBlender.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1572,7 +1583,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-html.svg"
+                  src={iconHtml.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1610,7 +1621,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-css.svg"
+                  src={iconCss.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1648,7 +1659,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               <div className="tools-cards__card">
                 <img
                   className="tools-cards__icon animate-in-up"
-                  src="img/icons/icon-notion.svg"
+                  src={iconNotion.src}
                   alt="Tools Icon"
                   style={{
                     translate: "none",
@@ -1766,10 +1777,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                       }}
                     >
                       <div className="tauthor__avatar">
-                        <img
-                          src="img/avatars/400x400_t01.webp"
-                          alt="Review Author"
-                        />
+                        <img src={avatart01.src} alt="Review Author" />
                       </div>
                       <div className="tauthor__info d-flex flex-column justify-content-center">
                         <p className="tauthor__name">Alex Tomato</p>
@@ -1857,10 +1865,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
                       }}
                     >
                       <div className="tauthor__avatar">
-                        <img
-                          src="img/avatars/400x400_t02.webp"
-                          alt="Review Author"
-                        />
+                        <img src={avatart02.src} alt="Review Author" />
                       </div>
                       <div className="tauthor__info d-flex flex-column justify-content-center">
                         <p className="tauthor__name">Jenny Pineapple</p>
