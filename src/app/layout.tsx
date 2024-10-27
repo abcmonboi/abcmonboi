@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { syne } from "@/app/fonts/fonts";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import MainLayOut from "@/app/components/layout/MainLayOut";
+import { ThemeProvider } from "@/app/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +16,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html
+      className="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths lenis lenis-smooth"
+      lang="en"
+      suppressHydrationWarning
+    >
+      <body className={`${syne.className} `}>
+        <ThemeProvider
+          attribute="color-scheme"
+          defaultTheme="dark"
+          enableSystem
+          enableColorScheme
+        >
+          <MainLayOut>{children}</MainLayOut>
+        </ThemeProvider>
       </body>
     </html>
   );
