@@ -1,6 +1,6 @@
 "use client";
 
-import { SquaresFour } from "@phosphor-icons/react";
+import { SquaresFour, ArrowDown, DownloadSimple } from "@phosphor-icons/react";
 import Link from "next/link";
 import React from "react";
 
@@ -78,14 +78,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
             {/* btn-hover-accent-mobile */}
             {/* <i className="ph-bold ph-squares-four" /> */}
             <div className="wrap-icon">
-              <SquaresFour
-                className="fill-[var(--t-bright)] hover:fill-red-500"
-                style={{
-                  filter:
-                    "drop-shadow(0 0 var(--t-bright),drop-shadow(0 5rem var(--t-bright))",
-                }}
-                weight="bold"
-              />
+              <SquaresFour className="fill-[var(--t-bright)]" weight="bold" />
             </div>
           </Link>
 
@@ -102,13 +95,19 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
           >
             <span className="btn-caption">Download CV</span>
             <i className="ph-bold ph-download-simple" />
+            <div className="wrap-icon">
+              <DownloadSimple
+                className="fill-[var(--t-bright)]"
+                weight="bold"
+              />
+            </div>
           </a>
         </div>
       </div>
       {/* Headline End */}
       {/* Scroll Button Start */}
       <div className="rotating-btn">
-        <a href="#portfolio" className="rotating-btn__link slide-down">
+        <Link href="#portfolio" className="rotating-btn__link slide-down">
           {/* SVG rotating text */}
           {/* arrow icon */}
           <svg
@@ -144,8 +143,11 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
               </text>
             </g>
           </svg>
-          <i className="ph-bold ph-arrow-down" />
-        </a>
+          {/* <i className="ph-bold ph-arrow-down" /> */}
+          <div className="wrap-icon">
+            <ArrowDown className="fill-[var(--t-bright)]" weight="bold" />
+          </div>
+        </Link>
       </div>
       {/* Scroll Button End */}
     </section>
