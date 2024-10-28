@@ -256,7 +256,7 @@ h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43
                       href={social.url}
                       target="_blank"
                     >
-                      <div>{social.icon}</div>
+                      <div className="wrap-icon">{social.icon}</div>
                     </Link>
                   </li>
                 );

@@ -2879,6 +2879,7 @@ form textarea:required:valid {
   height: 4.4rem;
   font-size: 1.6rem;
   white-space: nowrap;
+  overflow: hidden;
 }
 .header__trigger::before {
   content: "";
@@ -2911,16 +2912,10 @@ form textarea:required:valid {
     -moz-transform 0.3s var(--_animbezier);
 }
 .header__trigger svg {
-  display: block;
-  position: relative;
-  line-height: 4.4rem;
   fill: var(--t-opp-bright);
-  overflow: hidden;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s;
-  clip-path: inset(0);
-  height: 4.4rem;
 }
 .header__trigger span {
   display: block;
@@ -2933,7 +2928,7 @@ form textarea:required:valid {
   transition: 0.3s;
 }
 .header__trigger svg {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 .header__trigger span {
   display: none;
@@ -2950,8 +2945,6 @@ form textarea:required:valid {
     border-radius: var(--_radius-m);
   }
   .header__trigger svg {
-    line-height: 5rem;
-    /* fill: rgba(0, 0, 0, 0); */
     filter: drop-shadow(0 0 var(--t-opp-bright))
       drop-shadow(0 5rem var(--t-opp-bright));
   }
@@ -2975,8 +2968,7 @@ form textarea:required:valid {
     transform: scale3d(1.03, 1.03, 1.03);
   }
   .no-touch .header__trigger:hover svg {
-    filter: drop-shadow(0 -5rem var(--t-opp-bright))
-      drop-shadow(0 0 var(--t-opp-bright));
+    transform: translateY(-5rem);
   }
   .no-touch .header__trigger:hover span {
     text-shadow: 0 -5rem var(--t-opp-bright), 0 0 var(--t-opp-bright);
@@ -2990,7 +2982,7 @@ form textarea:required:valid {
     font-size: 2rem;
   }
   .header__trigger svg {
-    line-height: 6rem;
+    height: 6rem;
     filter: drop-shadow(0 0 var(--t-opp-bright))
       drop-shadow(0 6rem var(--t-opp-bright));
   }
@@ -2998,12 +2990,8 @@ form textarea:required:valid {
     line-height: 6rem;
     text-shadow: 0 0 var(--t-opp-bright), 0 6rem var(--t-opp-bright);
   }
-  .header__trigger svg {
-    font-size: 2.2rem;
-  }
   .no-touch .header__trigger:hover svg {
-    filter: drop-shadow(0 -6rem var(--t-opp-bright)),
-      drop-shadow(0 0 var(--t-opp-bright));
+    transform: translateY(-6rem);
   }
   .no-touch .header__trigger:hover span {
     text-shadow: 0 -6rem var(--t-opp-bright), 0 0 var(--t-opp-bright);
@@ -4388,6 +4376,7 @@ form textarea:required:valid {
   width: 4.4rem;
   height: 4.4rem;
   color: var(--t-bright);
+  overflow: hidden;
 }
 .socials-square__link::before {
   content: "";
@@ -4415,23 +4404,17 @@ form textarea:required:valid {
     -moz-transform 0.3s var(--_animbezier);
 }
 .socials-square__link div {
-  display: flex;
-  align-items: center;
-  position: relative;
-  line-height: 4.4rem;
-  font-size: 1.8rem;
-  color: var(--t-bright);
-  overflow: hidden;
+  fill: var(--t-bright);
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s;
-  clip-path: inset(0);
 }
 
 @media only screen and (min-width: 1200px) {
   .socials-square__link div {
     filter: drop-shadow(0 0 var(--t-bright))
       drop-shadow(0 4.4rem var(--t-bright));
+    transition: filter 0.3s translateY 0.3s;
   }
 
   .no-touch .socials-square__link:hover::before {
@@ -4440,15 +4423,14 @@ form textarea:required:valid {
     transform: scale3d(1.08, 1.08, 1.08);
   }
   .no-touch .socials-square__link:hover div {
-    /* fill: rgba(0, 0, 0, 0); */
-    filter: drop-shadow(0 -4.4rem var(--t-bright))
-      drop-shadow(0 0 var(--t-bright));
+    transform: translateY(-4.4rem);
   }
 }
 @media only screen and (min-width: 1400px) {
   .socials-square__link {
     width: 5rem;
     height: 5rem;
+    overflow: hidden;
   }
   .socials-square__link::before {
     -moz-border-radius: 2.2rem;
@@ -4457,10 +4439,10 @@ form textarea:required:valid {
   .socials-square__link div {
     line-height: 5rem;
     font-size: 1.8rem;
-    text-shadow: 0 0 var(--t-bright), 0 5rem var(--t-bright);
+    filter: drop-shadow(0 0 var(--t-bright)) drop-shadow(0 5rem var(--t-bright));
+    transition: filter 0.3s translateY 0.3s;
   }
   .no-touch .socials-square__link:hover div {
-    fill: rgba(0, 0, 0, 0);
-    text-shadow: 0 -5rem var(--t-bright), 0 0 var(--t-bright);
+    transform: translateY(-5rem);
   }
 }
