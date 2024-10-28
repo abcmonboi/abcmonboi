@@ -35,26 +35,6 @@ type SocialLinkType = {
   url: string;
 };
 
-const avatars = [
-  avatar,
-  avatar01,
-  avatar02,
-  avatar03,
-  avatar04,
-  avatar05,
-  avatar06,
-  avatar07,
-  avatar08,
-  avatar09,
-  avatar10,
-  avatar11,
-  avatar12,
-  avatar13,
-  avatar14,
-  avatar15,
-  avatar16,
-];
-
 const Avatar = () => {
   const socials: SocialLinkType[] = [
     {
@@ -82,6 +62,26 @@ const Avatar = () => {
       icon: <PinterestLogo weight="bold" size={18} />,
       url: "https://www.pinterest.com/",
     },
+  ];
+
+  const avatars = [
+    avatar,
+    avatar01,
+    avatar02,
+    avatar03,
+    avatar04,
+    avatar05,
+    avatar06,
+    avatar07,
+    avatar08,
+    avatar09,
+    avatar10,
+    avatar11,
+    avatar12,
+    avatar13,
+    avatar14,
+    avatar15,
+    avatar16,
   ];
 
   const [currentAvatar, setCurrentAvatar] = useState(avatar15);
@@ -213,6 +213,7 @@ h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43
             <Image
               width={300}
               height={300}
+              loading="lazy"
               className={`transition-transform duration-500 ease-in-out transform-gpu 
               ${
                 isVisible
@@ -224,7 +225,7 @@ h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43
              
               `}
               src={currentAvatar.src}
-              alt="Braxton - Personal Portfolio & Resume HTML Template Avatar"
+              alt="AB - Personal Portfolio & Resume HTML Template Avatar"
             />
           </div>
         </div>
