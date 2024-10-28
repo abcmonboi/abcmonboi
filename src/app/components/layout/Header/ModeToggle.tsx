@@ -9,19 +9,9 @@ import { useTheme } from "next-themes";
 
 const ModeToggle = () => {
   const { setTheme, theme } = useTheme();
-  const [currentTheme, setCurrentTheme] = useState("");
-
-  useEffect(() => {
-    if (theme) {
-      setCurrentTheme(theme);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const toggleTheme = () => {
-    if (!theme) return;
     setTheme(theme === "dark" ? "light" : "dark");
-    setCurrentTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
@@ -37,11 +27,8 @@ const ModeToggle = () => {
       >
         <em />
         <div>
-          {currentTheme === "dark" ? (
-            <Sun weight="bold" />
-          ) : (
-            <MoonStars weight="bold" />
-          )}
+             <Sun weight="bold" className="absolute scale-0 transition-all dark:rotate-0 dark:scale-100" />
+      <MoonStars weight="bold" className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
         </div>
       </button>
       <Link
