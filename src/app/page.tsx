@@ -1,4 +1,4 @@
-import HomeRef from "@/app/components/home/HomeRef";
+import HomeRef from "@/components/home/HomeRef";
 
 import workImg01 from "@/img/works/1400x1400_w01.webp";
 import workImg02 from "@/img/works/800_w02-thumb.webp";

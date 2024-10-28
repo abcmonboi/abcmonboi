@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { syne } from "@/app/fonts/fonts";
-import "./globals.css";
+import "@/style/globals.css";
 
-import MainLayOut from "@/app/components/layout/MainLayOut";
-import { ThemeProvider } from "@/app/components/theme-provider";
+import MainLayOut from "@/components/layout/MainLayOut";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "AB - Personal Portfolio & Resume HTML Template",
@@ -23,12 +23,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className={`${syne.className} `}>
-        <ThemeProvider
-          attribute="color-scheme"
-          defaultTheme="dark"
-          enableSystem
-          enableColorScheme
-        >
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <MainLayOut>{children}</MainLayOut>
         </ThemeProvider>
       </body>

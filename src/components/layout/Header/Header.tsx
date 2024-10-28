@@ -1,5 +1,5 @@
-import ModeToggle from "@/app/components/layout/Header/ModeToggle";
-import Navigation from "@/app/components/layout/Header/Navigation";
+import ModeToggle from "@/components/layout/Header/ModeToggle";
+import Navigation from "@/components/layout/Header/Navigation";
 
 const Header = () => {
   return (

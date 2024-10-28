@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { MoonStars, Sun, ChatDots } from "@phosphor-icons/react/dist/ssr";
+import { MoonStars, Sun, ChatDots } from "@phosphor-icons/react";
 
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -26,17 +26,22 @@ const ModeToggle = () => {
         onClick={toggleTheme}
       >
         <em />
-        <div>
-             <Sun weight="bold" className="absolute scale-0 transition-all dark:rotate-0 dark:scale-100" />
-      <MoonStars weight="bold" className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-        </div>
+        <Sun
+          className="absolute scale-0 transition-all dark:rotate-0 dark:scale-100 "
+          weight="bold"
+        />
+        <MoonStars
+          className="rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
+          weight="bold"
+        />
       </button>
+
       <Link
         id="notify-trigger"
         className="header__trigger btn"
         href="mailto:example@example.com?subject=Message%20from%20your%20site"
       >
-        <span className="trigger__caption">{`Let's Talk`}</span>
+        <span className="trigger__caption ">{`Let's Talk`}</span>
         <ChatDots weight="bold" />
       </Link>
     </div>

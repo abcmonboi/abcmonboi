@@ -1,7 +1,7 @@
 import React from "react";
 import bgImage from "@/img/backgrounds/1920x1080-main-bg.webp";
-import Avatar from "@/app/components/layout/Sidebar/Avatar";
-import Header from "@/app/components/layout/Header/Header";
+import Avatar from "@/components/layout/Sidebar/Avatar";
+import Header from "@/components/layout/Header/Header";
 
 const MainLayOut = ({
   children,
