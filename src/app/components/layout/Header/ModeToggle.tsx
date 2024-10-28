@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 import { MoonStars, Sun, ChatDots } from "@phosphor-icons/react/dist/ssr";
 
