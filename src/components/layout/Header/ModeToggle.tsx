@@ -42,7 +42,9 @@ const ModeToggle = () => {
         href="mailto:example@example.com?subject=Message%20from%20your%20site"
       >
         <span className="trigger__caption ">{`Let's Talk`}</span>
-        <ChatDots weight="bold" />
+        <div className="wrap-icon">
+          <ChatDots weight="bold" />
+        </div>
       </Link>
     </div>
   );

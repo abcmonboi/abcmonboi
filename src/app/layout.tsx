@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { syne } from "@/app/fonts/fonts";
+import { syne } from "@/fonts/fonts";
 import "@/style/globals.css";
 
 import MainLayOut from "@/components/layout/MainLayOut";

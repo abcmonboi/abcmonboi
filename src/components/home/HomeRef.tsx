@@ -7,7 +7,6 @@ import React from "react";
 const HomeRef = () => {
   return (
     <section id="home" className="main intro">
-      {/* Headline Start */}
       <div
         id="headline"
         className="headline flex items-start flex-col"
@@ -64,7 +63,7 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
         </h1>
         <div className="headline__btnholder flex flex-col sm:flex-row ">
           <Link
-            className="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline"
+            className="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline  "
             href="#portfolio"
             style={{
               translate: "none",
@@ -75,16 +74,16 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
             }}
           >
             <span className="btn-caption">My Works</span>
-            {/* btn-hover-accent-mobile */}
-            {/* <i className="ph-bold ph-squares-four" /> */}
             <div className="wrap-icon">
-              <SquaresFour className="fill-[var(--t-bright)]" weight="bold" />
+              {/* btn-hover-accent-mobile */}
+              <SquaresFour weight="bold" />
             </div>
           </Link>
 
-          <a
+          <Link
             className="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline"
-            href="#0"
+            href="/static/lenhubaccv.pdf"
+            download="lenhubac.pdf"
             style={{
               translate: "none",
               rotate: "none",
@@ -94,14 +93,10 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
             }}
           >
             <span className="btn-caption">Download CV</span>
-            <i className="ph-bold ph-download-simple" />
             <div className="wrap-icon">
-              <DownloadSimple
-                className="fill-[var(--t-bright)]"
-                weight="bold"
-              />
+              <DownloadSimple weight="bold" />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
       {/* Headline End */}
@@ -144,8 +139,8 @@ C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"
             </g>
           </svg>
           {/* <i className="ph-bold ph-arrow-down" /> */}
-          <div className="wrap-icon">
-            <ArrowDown className="fill-[var(--t-bright)]" weight="bold" />
+          <div className="wrap-icon max-h-[2.4rem]">
+            <ArrowDown weight="bold" />
           </div>
         </Link>
       </div>
