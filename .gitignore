@@ -1,0 +1,14 @@
+# 📁 Bỏ qua thư mục node_modules ở bất kỳ vị trí nào trong project
+**/node_modules/**
+
+# 📁 Bỏ qua thư mục build ở bất cứ nào trong project
+**/build/**
+
+# 🔐 Bỏ file môi trường chứa biến bí mật ở trong project
+.env
+.env*.local
+
+# 🪲 Bỏ log lỗi của npm/yarn/pnpm
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*

@@ -1,0 +1,16 @@
+export {default as System} from './System';
+export {default as Admin} from './Admin'
+export {default as EditProfile} from './User/EditProfile';
+export {default as Profile} from './User/Profile';
+export {default as AccountSettings} from './User/AccountSettings';
+export {default as ManageDetailsAlbum} from './Admin/ManageDetailsAlbum';
+export {default as ManageSubTheme} from './Admin/ManageSubTheme';
+export {default as ManageAllSubTheme} from './Admin/ManageAllSubTheme';
+export {default as AddSubTheme} from './Admin/AddSubTheme';
+export {default as ManageUser} from './Admin/ManageUser';
+export {default as ManageLicense} from './Admin/ManageLicense';
+export {default as AddLicense} from './Admin/AddLicense';
+export {default as ManageBlog} from "./Admin/Blog/ManageBlog";
+export {default as AddBlog} from "./Admin/Blog/AddBlog";
+export {default as ManageBlogCategory} from "./Admin/BlogCategory/ManageBlogCategory";
+export {default as AddBlogCategory} from "./Admin/BlogCategory/AddBlogCategory";

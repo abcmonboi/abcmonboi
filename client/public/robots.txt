@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /user
+Disallow: /*undefined$
+
+
+Sitemap : https://audiobay.net/sitemap.xml
