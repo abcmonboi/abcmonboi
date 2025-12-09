@@ -1,4 +1,5 @@
 # Lê Nhữ Huy
+![goku-dragon-ball-daima-2k-wallpaper-uhdpaper com-115@2@b](https://github.com/user-attachments/assets/023e3f45-3389-4681-8e16-1075db72c1bd)
 
 ## Web Developer
 
@@ -31,7 +32,7 @@ Tôi là Lê Nhữ Bắc, một Web Developer với niềm đam mê trong vi�
 - 💼 LinkedIn: [Tên LinkedIn của bạn](link_to_your_linkedin_profile)
 - 🐦 Twitter: [@your_twitter_handle](https://twitter.com/your_twitter_handle)
 
-Cảm ơn bạn đã ghé thăm hồ sơ của tôi!
+Cảm ơn bạn đã ghé thăm hồ sơ của tôi! 🎨
 
 ---
 
